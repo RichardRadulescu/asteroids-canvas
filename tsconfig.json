@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    /* 1. Environment: Tell TS we are in a Browser, not just Node */
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"], 
+    "moduleResolution": "bundler", // Best for modern browser workflows
+
+    /* 2. File Layout: Keeps your folder clean */
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    /* 3. Cleanup: Removed React and Declaration files */
+    "sourceMap": true,
+    "declaration": false,
+    "declarationMap": false,
+    // "jsx": "react-jsx", <--- DELETED (Not using React)
+
+    /* 4. Strictness: Keep these for high quality code */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "skipLibCheck": true,
+    "verbatimModuleSyntax": true
+  },
+  "include": ["src/**/*"]
+}
