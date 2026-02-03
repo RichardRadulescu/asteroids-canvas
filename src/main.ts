@@ -1,4 +1,7 @@
-import {Game} from "./Game.ts"
+import { Game } from "./Game"
 
-const game = Game()
-game.start()
+window.addEventListener('load', () => {
+    
+    const game = new Game("game");
+    
+});
